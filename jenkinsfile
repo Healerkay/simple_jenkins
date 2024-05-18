@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Testing Stage') {
             steps {
-                echo 'Building..'
+                echo 'Get the source code.'
             }
         }
-        stage('Test') {
+        stage('Build the image') {
             steps {
-                echo 'Testing..'
+                echo 'Building the image..'
             }
         }
-        stage('Deploy') {
+        stage('Deploy the image container') {
             steps {
-                echo 'Deploying....'
+                echo 'Container is running....'
             }
         }
     }
